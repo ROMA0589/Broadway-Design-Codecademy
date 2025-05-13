@@ -1,0 +1,137 @@
+/* General Reset */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #333;
+  z-index: 10;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  color: #fff;
+  font-weight: 600;
+  font-size: 12px;
+  width: 80px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  margin-top: 80px; /* Avoid overlapping with the fixed header */
+  text-align: center;
+}
+
+.jumbotron {
+  height: 800px;
+  background-image: url("https://content.codecademy.com/projects/broadway/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 70px;
+  text-transform: uppercase;
+  margin: 0 0 20px 0;
+}
+
+.btn-main {
+  background-color: #333;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 16px 40px;
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+}
+
+/* Supporting Section */
+.supporting {
+  padding: 80px 0 100px 0;
+}
+
+.supporting .container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.supporting .col {
+  width: 200px;
+  height: 200px;
+  text-align: center;
+}
+
+.supporting img {
+  height: 32px;
+}
+
+.supporting h2 {
+  font-weight: 600;
+  font-size: 23px;
+  text-transform: uppercase;
+  margin: 20px 0 10px 0;
+}
+
+.supporting p {
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-default {
+  background-color: #fff;
+  color: #333;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: 2px solid #333;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+
+footer p {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 500px) {
+  main h1 {
+    font-size: 50px;
+    padding: 0 40px;
+  }
+
+  .supporting .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
